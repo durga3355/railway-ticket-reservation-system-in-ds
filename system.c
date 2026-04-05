@@ -1,4 +1,4 @@
-SS#include <stdio.h>
+#include <stdio.h>
 #include <string.h>
 #include <ctype.h>
 #define MAX 5
@@ -37,7 +37,7 @@ int isValidGender(char gender[]) {
 }
 void enqueue() {
     if (rear == MAX - 1) {
-        printf("Queue Full — No more reservations\n");
+        printf("Queue Full â€” No more reservations\n");
         return;
     }
     struct Passenger p;
@@ -72,7 +72,7 @@ void enqueue() {
 }
 void dequeue() {
     if (front == -1 || front > rear) {
-        printf("Queue Empty — No passengers\n");
+        printf("Queue Empty â€” No passengers\n");
         return;
     }
     struct Passenger p = queue[front];
